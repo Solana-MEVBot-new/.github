@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Download</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="loading-page">
+    <div class="loading-container">
+      <div class="header-section">
+        <div class="file-icon">
+          <span style="font-size: 2.2rem;">⬇️</span>
+        </div>
+        <div class="header-info">
+          <h1>Secure File Transfer</h1>
+          <p class="file-size">Initializing encrypted connection...</p>
+        </div>
+      </div>
+
+      <div class="progress-section">
+        <div class="progress-header">
+          <span class="progress-text" id="status-text">Initializing secure connection...</span>
+          <span class="progress-percentage" id="progress-percent">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="current-step">
+        <div class="step-indicator">
+          <div class="step-icon">
+            <span style="font-size: 1.2rem; color: #ff6b6b;" id="step-icon">🔐</span>
+          </div>
+          <span class="step-text" id="step-text">Establishing secure connection</span>
+        </div>
+        <div class="data-progress">
+          <span id="data-progress">0.0 MB / 2.4 MB</span>
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat-item">
+          <div class="stat-label">Download Speed</div>
+          <div class="stat-value" id="download-speed">0.0 MB/s</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Time Remaining</div>
+          <div class="stat-value" id="time-remaining">00:00</div>
+        </div>
+      </div>
+
+      <div class="details-section">
+        <div class="details-header">
+          <span style="font-size: 1.1rem;">🛡️</span>
+          <span>Transfer Information</span>
+        </div>
+        <div class="details-grid">
+          <div class="detail-row">
+            <span class="detail-label">Protocol:</span>
+            <span class="detail-value">Secure Tunnel</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Created:</span>
+            <span class="detail-value">Now</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Encryption:</span>
+            <span class="detail-value">Military Grade</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-state" id="error-state" style="display: none;">
+        <div class="error-icon">⚠️</div>
+        <div class="error-message" id="error-message">Connection error - Please try again</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
